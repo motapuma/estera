@@ -1,0 +1,64 @@
+<div class="jumbotron">
+	<div align="center">
+		<b>Total: <%= @services.count%></b>
+	</div>
+	
+
+	<div class="row">
+			
+			<div class="col-md-2">
+				<b>Nombre</b>
+			</div>
+			
+			<div class="col-md-2">
+				<b>Email</b>
+			</div>
+
+			<div class="col-md-2">
+				<b>Servicio</b>
+			</div>
+
+			<div class="col-md-2">
+				<b>Telefono</b>
+			</div>
+
+			<div class="col-md-2">
+				<b>Latitud</b>
+			</div>
+			<div class="col-md-2">
+				<b>Longuitud</b>
+			</div>
+
+		</div>
+
+	<%@services.each do |ser|%>
+		
+		<div class="row">
+			
+			<div class="col-md-2">
+				<%=ser.name%>
+			</div>
+			
+			<div class="col-md-2">
+				<%=ser.email%>
+			</div>
+
+			<div class="col-md-2">
+				<%=SERVICE_NAMES[ser.type] if ser.type%>
+			</div>
+
+			<div class="col-md-2">
+				<%=ser.phone%>
+			</div>
+
+			<div class="col-md-2">
+				<%=ser.latitude%>
+			</div>
+			<div class="col-md-2">
+				<%=ser.longitude%>
+			</div>
+
+		</div>
+
+	<%end%>
+</div>
