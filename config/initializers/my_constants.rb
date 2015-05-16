@@ -1,0 +1,1 @@
+SERVICE_NAME = ["Base de Taxis","Renta","Lavanderia","Comer"]
