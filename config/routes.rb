@@ -7,6 +7,10 @@ Rails.application.routes.draw do
    root 'services#welcome'
 
   get "alltypes" =>  'services#alltypes'
+
+  get "search"   =>  'services#search',   as: "search"
+  get "announce" =>  'services#announce', as: "announce" 
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
