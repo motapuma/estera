@@ -1,1 +1,1 @@
-SERVICE_NAME = ["Base de Taxis","Renta","Lavanderia","Comer"]
+SERVICE_NAMES = ["Base de Taxis","Renta","Lavanderia","Comer"]

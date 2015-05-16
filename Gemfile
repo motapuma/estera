@@ -32,7 +32,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'twitter-bootswatch-rails', '~> 3.3.2'
+
+gem "twitter-bootstrap-rails"
+
 gem 'therubyracer'
 
 group :development, :test do
