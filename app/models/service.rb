@@ -3,12 +3,13 @@ class Service < ActiveRecord::Base
 
 	def self.services_types_to_json
 		services = []
-
+		services << {"type"=>0,"name"=>"all"}
+		
 		SERVICE_NAMES.each_with_index do |name,idx|
 			services << {"type"=>idx+1,"name"=>name}
 		end
 
-		services << {"type"=>0,"name"=>"all"}
+		
 
 		return services.to_json
 	end

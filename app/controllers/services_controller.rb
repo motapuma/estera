@@ -11,4 +11,8 @@ class ServicesController < ApplicationController
 
 	end
 
+	def announce
+		@service = Service.new
+	end
+
 end

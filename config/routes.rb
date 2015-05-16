@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resources :services
   # You can have the root of your site routed with "root"
-   root 'services#welcome'
+   root 'services#search'
 
   get "alltypes" =>  'services#alltypes'
 

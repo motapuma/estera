@@ -1,0 +1,45 @@
+<%=form_for @service do |f|%>
+
+    <div class="row">
+        <div class="col-md-6">
+    	   <%= f.label :name, "Nombre" %>
+        </div>  
+        <div class="col-md-6">
+            <%= f.text_field :name %>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <%= f.label :latitude, "Latitude" %>
+        </div>  
+        <div class="col-md-6">
+            <%= f.text_field :latitude %>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <%= f.label :longitude, "Longitude" %>
+        </div>
+        <div class="col-md-6">
+            <%= f.text_field :longitude %>
+        </div>
+
+    </div>
+    <div class="row">
+
+    	<%= f.label :phone, "Teléfono" %>
+        <%= f.text_field :phone %>   
+    </div>
+    <div class="row">
+
+        <%= f.label :email, "email" %>
+        <%= f.text_field :email %>   
+    </div>
+    <div class="row">
+
+        <%= f.select :type,SERVICE_NAMES.each_with_index.map{ |val, i| [ val[0], i ]  },:include_blank => "Servicio"%>
+    </div>
+
+
+<%end%>
