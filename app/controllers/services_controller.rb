@@ -45,6 +45,35 @@ class ServicesController < ApplicationController
 
 	end
 
+  def destroy
+	@services = Service.find(params[:id])
+
+    @services.destroy
+    respond_to do |format|
+      format.html { redirect_to services_url, notice: 'Candidate was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
+ 
+ 	def edit
+ 		@service = Service.find(params[:id])
+ 	end
+
+ def update
+ 	@service = Service.find(params[:id])
+    respond_to do |format|
+      if @service.update(service_params)
+        #binding.pry
+        format.html { redirect_to edit_service_path(@service), notice: 'Service was successfully updated.' }
+        format.json { render :edit, status: :ok, location: @service }
+      else
+        format.html { render :edit }
+        format.json { render json: @service.errors, status: :unprocessable_entity }
+      end
+    end
+
+  end
+
 	private
 
 	def service_params

@@ -14,11 +14,11 @@
 				<b>Email</b>
 			</div>
 
-			<div class="col-md-2">
+			<div class="col-md-1">
 				<b>Servicio</b>
 			</div>
 
-			<div class="col-md-2">
+			<div class="col-md-1">
 				<b>Telefono</b>
 			</div>
 
@@ -28,6 +28,15 @@
 			<div class="col-md-2">
 				<b>Longuitud</b>
 			</div>
+
+			<div class="col-md-1">
+				
+			</div>
+			<div class="col-md-1">
+				
+			</div>
+
+
 
 		</div>
 
@@ -43,11 +52,11 @@
 				<%=ser.email%>
 			</div>
 
-			<div class="col-md-2">
+			<div class="col-md-1">
 				<%=SERVICE_NAMES[ser.service_type] if ser.service_type%>
 			</div>
 
-			<div class="col-md-2">
+			<div class="col-md-1">
 				<%=ser.phone%>
 			</div>
 
@@ -56,6 +65,14 @@
 			</div>
 			<div class="col-md-2">
 				<%=ser.longitude%>
+			</div>
+
+			<div class="col-md-1">
+				<%=link_to "Delete",service_path(ser), 'data-method' => :delete, :class => "delete", :confirm => "Are you sure ?"%> 
+			</div>
+
+			<div class="col-md-1">
+				<%= link_to "edit",edit_service_path(ser) %> 
 			</div>
 
 		</div>
