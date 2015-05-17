@@ -40,7 +40,16 @@ class Service < ActiveRecord::Base
 		h[:name]      = self.name
 		h[:email]      = self.email
 		h[:phone]      = self.phone
-		h[:pictures]   = []
+		pictures = []
+
+		pictures << TAXIS_PHOTOS.sample   if self.service_type == 1
+		pictures << RENTAS_PHOTOS.sample  if self.service_type == 2
+		pictures << LAUNDRY_PHOTOS.sample   if self.service_type == 3
+		pictures << FONDAS_PHOTOS.sample    if self.service_type == 4
+		pictures << PELUQUERIA.sample     if self.service_type == 5
+
+
+		h[:pictures]   = pictures
 
 		return h
 
