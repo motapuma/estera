@@ -1,4 +1,4 @@
-SERVICE_NAMES  = ["Base de Taxis","Renta","Lavanderia","Comer","Peluqueria"]
+SERVICE_NAMES  = ["Base de Taxis","Renta","Lavanderia","Comer","Peluqueria","Veterinaria"]
 LAUNDRY_PHOTOS = ["https://conacyemtoluca.files.wordpress.com/2012/02/lavanderia11.jpg",
 				  "https://conacyemhidalgo.files.wordpress.com/2011/11/lavanderc3ada.jpg",
 				  "https://conacyemestado.files.wordpress.com/2012/04/planchaduria-y-lavanderia.jpg"]
@@ -8,3 +8,4 @@ RENTAS_PHOTOS  = ["http://www.casasgeo.com/contenido/Mexico/Paseos_De_San_Juan/h
 				  "http://www.arqhys.com/wp-content/fotos/2011/08/Fotos-de-diseño-de-casas1.jpg"]
 PELUQUERIA     = ["http://estudibasic.es/images/Blog/Romy/pelu12.jpg",
 				  "http://www.mujerhoy.cl/media/users/2/102231/images/public/13153/FUAD_PELUQUERIA.jpg?v=1345662791526"];
+FONDAS_PHOTOS  = ["http://media-cdn.tripadvisor.com/media/photo-s/04/7d/ac/64/restaurante-mi-fondita.jpg"]
