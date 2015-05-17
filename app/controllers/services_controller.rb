@@ -77,7 +77,7 @@ class ServicesController < ApplicationController
 	private
 
 	def service_params
-      params.require(:service).permit(:name,:latitude,:longitude,:phone,:email,:type,urls_attributes: [:url,:service_id])
+      params.require(:service).permit(:name,:latitude,:longitude,:phone,:email,:type,:service_type,urls_attributes: [:url,:service_id])
     end
 
 end
