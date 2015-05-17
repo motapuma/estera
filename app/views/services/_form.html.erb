@@ -23,7 +23,7 @@
     <div class="row">
         
         <div class="col-md-6 col-md-offset-3">
-            <%= f.text_field :phone, placeholder:"Teléfono",class: "form-control" %>   
+            <%#= f.text_field :phone, placeholder:"Teléfono",class: "form-control" %>   
         </div>
 
     </div>
@@ -31,12 +31,12 @@
 
          
         <div class="col-md-6 col-md-offset-3">
-            <%= f.text_field :email, placeholder:"Email",class: "form-control" %>  
+            <%#= f.text_field :email, placeholder:"Email",class: "form-control" %>  
         </div> 
     </div>
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
-            <%= f.select :service_type,SERVICE_NAMES.each_with_index.map{ |val, i| [ val, i ]  },{:include_blank => "Servicio"},class: "form-control"%>
+            <%#= f.select :service_type,SERVICE_NAMES.each_with_index.map{ |val, i| [ val, i ]  },{:include_blank => "Servicio"},class: "form-control"%>
         </div>
     </div>
 
