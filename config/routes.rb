@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   get "search"   =>  'services#search',   as: "search"
   get "announce" =>  'services#announce', as: "announce" 
+  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

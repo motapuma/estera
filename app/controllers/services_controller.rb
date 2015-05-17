@@ -17,7 +17,7 @@ class ServicesController < ApplicationController
 
 	def create
 
-		  @service = Service.new(candidate_params)
+		  @service = Service.new(service_params)
 
 		  respond_to do |format|
 		    if @service.save
@@ -37,7 +37,7 @@ class ServicesController < ApplicationController
 
 	private
 
-	def candidate_params
+	def service_params
       params.require(:service).permit(:name,:latitude,:longitude,:phone,:email,:type,urls_attributes: [:url,:service_id])
     end
 
