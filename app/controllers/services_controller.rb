@@ -35,6 +35,16 @@ class ServicesController < ApplicationController
 		@services = Service.all
 	end
 
+	def filter_per_type
+
+		type = params[:type]
+
+		respond_to do |format|
+			format.json { render json: Service.json_per_type(type.to_i) }
+		end
+
+	end
+
 	private
 
 	def service_params
