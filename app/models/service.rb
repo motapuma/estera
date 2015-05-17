@@ -24,7 +24,7 @@ class Service < ActiveRecord::Base
 			service_arrs << ser.to_local_hash
 		end
 
-		return service_arrs
+		return service_arrs.to_json
 
 	end
 
@@ -42,7 +42,7 @@ class Service < ActiveRecord::Base
 		h[:phone]      = self.phone
 		h[:pictures]   = []
 
-		h.to_json
+		return h
 
 	end
 
